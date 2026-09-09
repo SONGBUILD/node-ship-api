@@ -1,0 +1,20 @@
+{
+  "name": "node-ship-api",
+  "version": "1.0.0",
+  "description": "Small production-shaped Express API: health, auth, layered folders, Docker.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["express", "nodejs", "api", "docker"],
+  "author": "Song Xiangrong",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

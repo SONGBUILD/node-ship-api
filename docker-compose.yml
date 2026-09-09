@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: "3000"
+      JWT_SECRET: change-me-in-production
+      DEMO_USER: demo
+      DEMO_PASS: demo-pass
