@@ -37,9 +37,11 @@ docker compose up --build
 
 Copy `.env.example` in production and set `JWT_SECRET`.
 
-## Why this repo exists
+## Layout choice
 
-Upwork / freelance work often needs a boring, deployable Node API. This is the skeleton: retries and databases stay out so the layout stays obvious.
+Routes parse HTTP. Services hold the rules. Middleware handles auth and errors. Retries and a database are left out so the path from request to response stays readable.
+
+Set `JWT_SECRET` from the environment before any deploy. The demo account is `demo` / `demo-pass` unless that environment overrides it.
 
 ## License
 
